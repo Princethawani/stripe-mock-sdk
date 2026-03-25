@@ -1,4 +1,3 @@
-// src/paymentMethods/service/PaymentMethodService
 import type { PaymentMethod, CreatePaymentMethodParams } from "../interface/types";
 import { notFound } from "../../../middlewares/errorHandler";
 import type { PaymentMethodStore } from "../infrastructure/PaymentMethodStore";
@@ -27,7 +26,7 @@ export class PaymentMethodService {
         last4,
         exp_month: params.card.exp_month,
         exp_year: params.card.exp_year,
-        country: "US",
+        country: "MW",
         funding: "credit",
         fingerprint,
         checks: {
