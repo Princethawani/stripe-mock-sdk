@@ -1,0 +1,21 @@
+# Source (dist is what gets published)
+src/
+tests/
+config/
+middlewares/
+shared/
+utils/
+
+# Config files not needed by consumers
+tsconfig.json
+.env
+docker-compose.yml
+Dockerfile
+
+# Dev artifacts
+node_modules/
+*.map
+
+
+
+cd /home/claude/stripe-mock-sdk-v2 && npm pack --dry-run 2>&1

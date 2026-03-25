@@ -1,22 +1,60 @@
 {
   "name": "stripe-mock-sdk",
   "version": "1.0.0",
-  "description": "TypeScript drop-in mock of the Stripe SDK for unit testing payments, subscriptions, and webhooks — no network calls.",
+  "description": "TypeScript drop-in mock of the Stripe SDK for unit testing payments, subscriptions, and webhooks — no network calls, no API keys.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run lint && npm test && npm run build"
   },
-  "keywords": ["stripe", "mock", "testing", "typescript", "payments", "fintech"],
-  "author": "",
+  "keywords": [
+    "stripe",
+    "mock",
+    "testing",
+    "typescript",
+    "payments",
+    "fintech",
+    "mwk",
+    "malawi",
+    "unit-test",
+    "vitest",
+    "jest"
+  ],
+  "author": {
+    "name": "Prince Thawani",
+    "email": "princethawani4@gmail.com",
+    "url": "https://princethawani.com/"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/princethawani/stripe-mock-sdk.git"
+  },
+  "homepage": "https://github.com/princethawani/stripe-mock-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/princethawani/stripe-mock-sdk/issues",
+    "email": "princethawani4@gmail.com"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "typescript": "^5.0.0",
     "vitest": "^2.0.0"
   }
 }
+
+
+
+
+
