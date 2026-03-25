@@ -8,7 +8,7 @@ import { StripeMockError, notFound, invalidParam } from "../../../middlewares/er
 import type { PaymentIntentStore } from "../infrastructure/PaymentIntentStore";
 import type { ScenarioEngine } from "../../../utils/scenarios";
 import type { WebhookService } from "../../webhooks/service/WebhookService";
-import { generateId, now } from "../../../shared/idGenerator";
+import { generateId} from "../../../shared/idGenerator";
 import { now as timestamp } from "../../../shared/timeHelpers";
 import { logger } from "../../../middlewares/requestLogger";
 
