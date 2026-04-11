@@ -73,6 +73,7 @@ export class PaymentMethodService {
     customer: string;
     type?: "card";
     limit?: number;
+    
   }): Promise<{ data: PaymentMethod[]; object: "list"; has_more: boolean }> {
     let data = this.store.allForCustomer(params.customer);
     if (params.type) data = data.filter((pm) => pm.type === params.type);
