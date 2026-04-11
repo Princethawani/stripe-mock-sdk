@@ -37,7 +37,6 @@ export class WebhookEmitter {
     this.service.clearHistory();
     return this;
   }
-
   constructEvent<T>(type: WebhookEventType, data: T): WebhookEvent<T> {
     return this.service.constructEvent(type, data);
   }
