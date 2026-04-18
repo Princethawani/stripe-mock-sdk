@@ -3,6 +3,8 @@ import type { WebhookEvent, WebhookEventType, WebhookHandler } from "./types";
 
 /**
  * Public-facing webhook emitter — mirrors the Stripe webhooks surface.
+ * @see https://stripe.com/docs/webhooks for more details on the Stripe webhooks API.
+ * @see
  */
 export class WebhookEmitter {
   constructor(private service: WebhookService) {}
